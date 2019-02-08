@@ -1,0 +1,75 @@
+Merge Fast Forward (--ff-only, if not a fast forward, fail)
+
+* 8f1fecc (HEAD -> master, feat/velo) feat: velo.yaml
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+Merge Recursive (--no-ff, if fast-forward, create a merge commit)
+
+*   b4c688d (HEAD -> master) Merge branch 'feat/velo'
+|\  
+| * 8f1fecc (feat/velo) feat: velo.yaml
+|/  
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+Merge par défaut (--ff, if fast-forward, only update the branch pointer)
+
+*   3484365 (HEAD -> master) Merge branch 'feat/velo'
+|\  
+| * 8f1fecc (feat/velo) feat: velo.yaml
+* | f7222f6 feat: fix prenom in contact.yaml
+|/  
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+Rebase (plutot à faire dans l'autre sens)
+
+* f3117eb (HEAD -> master) feat: fix prenom in contact.yaml
+* 8f1fecc (feat/velo) feat: velo.yaml
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+Rebase (on voudrait plutot ceci, pour ne pas réécrire l'historique partagé)
+
+* 8f1fecc (HEAD -> master, feat/velo) feat: velo.yaml
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+
+Rebase SANS Preserve Merge
+*   3484365 (HEAD -> master) Merge branch 'feat/velo'
+|\  
+| * 8f1fecc (feat/velo) feat: velo.yaml
+* | f7222f6 feat: fix prenom in contact.yaml
+|/  
+*   55d9682 (HEAD -> master) Merge branch 'feat/velo'
+|\  
+| * 8f1fecc (feat/velo) feat: velo.yaml
+|/  
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
+
+Rebase AVEC Preserve Merge
+* 4d31a92 (HEAD -> master) fix: prenom in contact.yml
+*   efaf01f Merge branch 'feat/velo'
+|\  
+| * ed4d4f9 (feat/velo) fix: vitesses in velo.yml
+| * 8f1fecc feat: velo.yaml
+|/  
+* e47bf91 (origin/master, origin/HEAD) feat: societe.yml
+* 6486091 chore: .gitignore
+* 7154938 feat: new file contact.yml
+* 4baf4d8 commit initial
