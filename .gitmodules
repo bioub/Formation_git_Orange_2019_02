@@ -1,3 +1,6 @@
 [submodule "exercices/rebase-interactif"]
 	path = exercices/rebase-interactif
 	url = https://gitlab.com/exercices-git/rebase-interactif.git
+[submodule "chris"]
+	path = chris
+	url = https://github.com/triptop/Formation_git_Orange_2019_02.git
