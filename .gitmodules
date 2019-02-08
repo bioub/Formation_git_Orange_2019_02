@@ -1,0 +1,3 @@
+[submodule "exercices/rebase-interactif"]
+	path = exercices/rebase-interactif
+	url = https://gitlab.com/exercices-git/rebase-interactif.git
